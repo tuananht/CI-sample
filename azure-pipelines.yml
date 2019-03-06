@@ -18,4 +18,4 @@ steps:
 #   inputs:
 #     artifactName: 'JUnit Report' 
 #     targetPath: report/
-- task: AnhTuan.katalon-plugin.katalon-plugin@0
+- task: AnhTuan.katalon-plugin.katalon-plugin
