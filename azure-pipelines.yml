@@ -18,4 +18,10 @@ steps:
 #   inputs:
 #     artifactName: 'JUnit Report' 
 #     targetPath: report/
+# Download version: 5.10
+# Use: ...
+
 - task: RunKatalonTests@0
+  inputs:
+    samplestring: "Anh Tuan"
+    
