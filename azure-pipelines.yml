@@ -23,6 +23,6 @@ steps:
 
   - task: buildandreleasetask@0
     inputs:
-      samplestring: "Anh Tuan Tran"
-      version: "5.10.1"
+      # samplestring: "Anh Tuan Tran"
+      versionstring: "5.10.1"
     
