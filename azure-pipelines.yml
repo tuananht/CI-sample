@@ -25,4 +25,5 @@ steps:
     inputs:
       # samplestring: "Anh Tuan Tran"
       version: "5.10.100 sample"
+      location: 'katalon studio'
     
