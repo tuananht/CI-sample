@@ -27,6 +27,6 @@ steps:
       version: "5.10.100 sample"
       location: 'katalon studioo'
       executeArgs: '-reportFolder="Reports" -reportFileName="report" -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome"'
-      x11Display: 'null'
+      x11Display: 'nulll'
       xvfbConfiguration: 'nulll'
     
