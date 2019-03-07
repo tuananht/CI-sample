@@ -23,5 +23,5 @@ steps:
 
   - task: buildandreleasetask@0
     inputs:
-      samplestring: "Anh Tuan "
+      samplestring: "Anh Tuan Tran"
     
