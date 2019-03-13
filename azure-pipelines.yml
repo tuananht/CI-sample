@@ -25,7 +25,7 @@ steps:
     inputs:
       # samplestring: "Anh Tuan Tran"
       version: "5.10.1"
-      location: 'katalon studio'
+      location: 'location'
       executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"'
       x11Display: 'x11Display'
       xvfbConfiguration: 'xvfbConfiguration'
