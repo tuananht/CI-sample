@@ -27,6 +27,6 @@ steps:
       version: "5.10.1"
       location: 'katalon studio'
       executeArgs: '-reportFolder="Reports" -reportFileName="report" -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome"'
-      x11Display: ''
-      xvfbConfiguration: ''
+      x11Display: ' '
+      xvfbConfiguration: ' '
     
