@@ -21,7 +21,7 @@ steps:
 # Download version: 5.10
 # Use: ...
 
-  - task: katalon-devops-extension@1
+  - task: katalon-devops-extension@0
     inputs:
       # samplestring: "Anh Tuan Tran"
       version: "5.10.1"
