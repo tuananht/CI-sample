@@ -26,7 +26,7 @@ steps:
       # samplestring: "Anh Tuan Tran"
       version: "5.10.1"
       location: 'katalon studio'
-      executeArgs: '-reportFolder="Reports" -reportFileName="report" -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -browserType="Chrome"'
+      executeArgs: '-projectPath="/home/vsts/work/1/s/CI-sample/test.prj" -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"'
       x11Display: ' '
       xvfbConfiguration: ' '
     
