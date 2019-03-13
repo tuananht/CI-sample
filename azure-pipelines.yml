@@ -29,4 +29,5 @@ steps:
       executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"'
       x11Display: 'x11Display'
       xvfbConfiguration: 'xvfbConfiguration'
+      reportDirectory: '$(System.DefaultWorkingDirectory)'
     
