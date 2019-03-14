@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Windows 2019'
+  vmImage: 'Windows'
 
 steps:
 # - script: docker pull katalonstudio/katalon
