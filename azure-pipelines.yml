@@ -26,9 +26,9 @@ steps:
 
   - task: katalon-devops-extension-plugin@0
     inputs:
-      version: "5.10.1"
+      version: "6.0.6"
       location: ''
       executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"
       x11Display: ''
-      xvfbConfiguration: xvfb-run -a
+      xvfbConfiguration: -a -n 0 -s "screen 0 1024x768x24"
     
