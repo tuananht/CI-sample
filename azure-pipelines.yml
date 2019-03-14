@@ -28,7 +28,7 @@ steps:
     inputs:
       version: "5.10.1"
       location: ''
-      executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"
+      executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox"
       x11Display: ''
       xvfbConfiguration: ''
     
