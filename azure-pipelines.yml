@@ -23,7 +23,6 @@ steps:
 
   - task: katalon-devops-extension@0
     inputs:
-      # samplestring: "Anh Tuan Tran"
       version: "5.10.0"
       location: ''
       executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="IE"
