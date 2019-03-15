@@ -13,8 +13,8 @@ pool:
   # vmImage: vs2015-win2012r2
 
 steps:
- - script: xvfb-run -a -n 0 -s "screen 0 1024x768x24" firefox
-   displayName: 'Pull katalon sudio images'
+  - script: xvfb-run -a -n 0 -s "screen 0 1024x768x24" firefox
+    displayName: 'Pull katalon sudio images'
 # - script: docker run -t --rm -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
   # displayName: 'Runnning Katalon TS_RegressionTest'
 # - task: PublishPipelineArtifact@0
