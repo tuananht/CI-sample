@@ -7,10 +7,10 @@ trigger:
 - master
 
 pool:
-  vmImage: 'win1803'
+  # vmImage: 'win1803'
   # vmImage: 'ubuntu-16.04'
   # vmImage: 'macOS-10.13'
-  # vmImage: vs2015-win2012r2
+  vmImage: vs2015-win2012r2
 
 steps:
 #   - script: xvfb-run -a -n 0 -s "screen 0 1024x768x24" firefox
