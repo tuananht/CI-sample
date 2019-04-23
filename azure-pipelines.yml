@@ -8,9 +8,9 @@ trigger:
 
 pool:
   # vmImage: 'win1803'
-  vmImage: 'ubuntu-16.04'
+  # vmImage: 'ubuntu-16.04'
   # vmImage: 'macOS-10.13'
-  # vmImage: windows-2019
+  vmImage: windows-2019
 
 steps:
 #   - script: xvfb-run -a -n 0 -s "screen 0 1024x768x24" firefox
@@ -28,6 +28,6 @@ steps:
     inputs:
       version: "6.1.1"
       location: ''
-      executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"
+      executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="firefox"
       x11Display: ''
       xvfbConfiguration: -a -n 0 -s "screen 0 1024x768x24"
