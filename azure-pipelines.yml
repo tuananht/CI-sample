@@ -29,6 +29,6 @@ steps:
       version: "6.1.0"
       location: ''
       # executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"
-      executeArgs: node -v
+      executeArgs: C:\Users\VssAdministrator\.katalon\6.1.0\Katalon_Studio_Windows_64-6.1.0\katalon -noSplash -runMode=console -projectPath="d:/a/1/s/test.prj" -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome"
       x11Display: ''
       xvfbConfiguration: -a -n 0 -s "screen 0 1024x768x24"
