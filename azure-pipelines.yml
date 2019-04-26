@@ -24,7 +24,7 @@ steps:
 # Download version: 5.10
 # Use: ...
   # - script: node -v
-  - task: katalon-plugin@0
+  - task: katalonPlugin@0
     inputs:
       version: "6.1.1"
       location: ''
