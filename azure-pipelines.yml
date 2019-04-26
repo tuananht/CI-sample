@@ -13,17 +13,6 @@ pool:
   vmImage: windows-2019
 
 steps:
-#   - script: xvfb-run -a -n 0 -s "screen 0 1024x768x24" firefox
-#     displayName: 'Pull katalon sudio images'
-# - script: docker run -t --rm -v "$(pwd)":/katalon/katalon/source katalonstudio/katalon katalon-execute.sh -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest"
-  # displayName: 'Runnning Katalon TS_RegressionTest'
-# - task: PublishPipelineArtifact@0
-#   inputs:
-#     artifactName: 'JUnit Report' 
-#     targetPath: report/
-# Download version: 5.10
-# Use: ...
-  # - script: node -v
   - task: katalonPlugin@0
     inputs:
       version: "6.1.1"
