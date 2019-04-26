@@ -13,7 +13,7 @@ pool:
   vmImage: windows-2019
 
 steps:
-  - task: KatalonPlugin@0
+  - task: KatalonExtensionTask@0
     inputs:
       version: "6.1.1"
       location: ''
