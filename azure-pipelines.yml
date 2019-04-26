@@ -13,7 +13,7 @@ pool:
   vmImage: windows-2019
 
 steps:
-  - task: katalon-devops-extension-plugin@0
+  - task: katalon-devops-extension-pluginy@0
     inputs:
       version: "6.1.1"
       location: ''
