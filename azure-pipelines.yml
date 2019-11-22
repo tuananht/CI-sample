@@ -13,10 +13,8 @@ pool:
   vmImage: windows-2019
 
 steps:
-  - task: KatalonExtensionTask@0
+  - task: katalonTask@0
     inputs:
-      version: "6.1.1"
-      location: ''
-      executeArgs: -retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox"
-      x11Display: ''
-      xvfbConfiguration: -a -n 0 -s "screen 0 1024x768x24"
+      version: '6.1.1'
+      executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox"'
+      xvfbConfiguration: '-a -n 0 -s "screen 0 1024x768x24"'
