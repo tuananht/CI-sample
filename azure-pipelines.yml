@@ -15,5 +15,6 @@ pool:
 steps:
 - task: katalonTask@0
   inputs:
-    version: '7.1.0'
+    version: '6.3.3'
+    location: 'c:/katalon'
     executeArgs: 'katalonc -noSplash -runMode=console -projectPath=“C:\jegan\SourceCOde\AzureRepo\CICDKatalon\SEADemo.prj” -retry=0 -testSuitePath=“Test Suites/SEA_InternetModule_TS/SEA_IM_TS” -executionProfile=“default” -browserType=“Chrome (headless)” -apiKey=“ae87b6f1-2782-4ac7-b384-64f9101549d4”'
