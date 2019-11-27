@@ -21,5 +21,4 @@ steps:
 - task: katalonTask@0
   inputs:
     version: '6.3.3'
-    location: 'C:\Katalon'
     executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox" -apiKey="b279faef-0a5a-4aa5-8cff-ebc81466ac8c"'
