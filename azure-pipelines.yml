@@ -21,5 +21,5 @@ steps:
 - task: katalonTask@0
   inputs:
     version: '7.5.5'
-    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox" -apiKey="b279faef-0a5a-4aa5-8cff-ebc81466ac8c" --config -webui.autoUpdateDrivers=true'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Firefox" -apiKey="2a3480ac-2e7f-450b-83d2-cfa4f18858f7" --config -webui.autoUpdateDrivers=true'
     xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
