@@ -8,9 +8,9 @@ trigger:
 
 pool:
   # vmImage: 'win1803'
-  vmImage: 'ubuntu-16.04'
+  # vmImage: 'ubuntu-16.04'
   # vmImage: 'macOS-10.13'
-  # vmImage: windows-2019
+  vmImage: windows-2019
 
 steps:
 # - task: katalonTask@0
