@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'win1803'
+  vmImage: 'ubuntu-latest'
   # vmImage: 'ubuntu-16.04'
   # vmImage: 'macOS-10.13'
   # vmImage: windows-2019
