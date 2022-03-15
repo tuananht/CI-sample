@@ -7,19 +7,34 @@ trigger:
 - master
 
 pool:
-  # vmImage: 'win1803'
+  vmImage: 'win1803'
   # vmImage: 'ubuntu-16.04'
   # vmImage: 'macOS-10.13'
-  vmImage: windows-2019
+  # vmImage: windows-2019
 
 steps:
-# - task: katalonTask@0
-#   inputs:
-#     version: '6.3.3'
-#     executeArgs: 'katalon -noSplash -runMode=console -projectPath=“C:\jegan\SourceCOde\AzureRepo\CICDKatalon\SEADemo.prj” -retry=0 -testSuitePath=“Test Suites/SEA_InternetModule_TS/SEA_IM_TS” -executionProfile=“default” -browserType=“Chrome (headless)” -apiKey=“ae87b6f1-2782-4ac7-b384-64f9101549d4”'
-
 - task: katalonTask@0
   inputs:
-    version: '7.4.6'
-    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome" -apiKey="2a3480ac-2e7f-450b-83d2-cfa4f18858f7" --config -webui.autoUpdateDrivers=true'
+    version: '8.2.5'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome" -apiKey="d558a169-aee2-43be-b8d3-bfec92c9c407" --config -webui.autoUpdateDrivers=true'
     xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
+
+- task: DockerInstaller@0
+  displayName: Docker Installer
+  inputs:
+    dockerVersion: 18.09.9
+    releaseType: stable
+
+- bash: |
+    set -ex
+    export REPORT_PATH=$(pwd)/report
+    docker run -t --rm -v \
+      $REPORT_PATH: \
+        -e PASSWORD=d558a169-aee2-43be-b8d3-bfec92c9c407  \
+        -e PROJECT_ID=29339 \
+        -e TYPE=katalon \
+        -e REPORT_PATH=D:\a\1\s\Reports \
+        katalonstudio/report-uploader:0.0.8
+  displayName: Upload report to Katalon TestOps
+  env:
+    KATALON_API_KEY: d558a169-aee2-43be-b8d3-bfec92c9c407
