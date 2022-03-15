@@ -13,17 +13,16 @@ pool:
   # vmImage: windows-2019
 
 steps:
-- task: katalonTask@0
-  inputs:
-    version: '8.2.5'
-    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome" -apiKey="d558a169-aee2-43be-b8d3-bfec92c9c407" --config -webui.autoUpdateDrivers=true'
-    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
-
 - task: DockerInstaller@0
   displayName: Docker Installer
   inputs:
     dockerVersion: 18.09.9
     releaseType: stable
+- task: katalonTask@1
+  inputs:
+    version: '8.2.5'
+    executeArgs: '-retry=0 -testSuitePath="Test Suites/TS_RegressionTest" -executionProfile="default" -browserType="Chrome" -apiKey="d558a169-aee2-43be-b8d3-bfec92c9c407" --config -webui.autoUpdateDrivers=true'
+    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
 
 - bash: |
     set -ex
